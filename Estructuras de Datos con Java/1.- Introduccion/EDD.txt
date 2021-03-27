@@ -1,0 +1,10 @@
+
+ESTRUCTURAS DE DATOS
+
+Es una agregación de tipo de datos compuestos y atómicos en un conjunto con relaciones bien definidas. Una estructura significa un conjunto de reglas que contiene los datos juntos.
+
+*Tipos primitivos
+
+*Acceso: Secuencial o Directo
+
+*Tamaño: Estático o Dinámico
