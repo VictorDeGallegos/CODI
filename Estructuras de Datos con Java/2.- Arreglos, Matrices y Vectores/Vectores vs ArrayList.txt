@@ -1,0 +1,11 @@
+-VECTOR:
+La diferencias mas importante es que el arraylist no está sincronizado y el vector si está sincronizado, por defecto pensamos que al ser sincronizado será mejor pero sucede lo contrario.
+
+Los incrementos del vector significan que se duplica la matriz por ejemplo si es 15 es 30, el vector es mas lento comparado al arraylist por ser sincronizado, utiliza interfaz enum (enumeración) pero también puede utilizar iterator.
+
+
+-ARRAYLIST:
+No esta sincronizado, su incremento se basa en el 50% de su tamaño actual, es decir crece la mitad de lo que tiene en ese momento y no es una clase heredada, su aparición se da a partir del jdk 1.2, es más rápido en realidad por no tener problemas de sincronización, utiliza la interfaz iterator, no puede contener datos primitivos, solo objetos. 
+
+Conclusión:
+Ninguno es peor que otro, solo tienen diferentes cualidades
