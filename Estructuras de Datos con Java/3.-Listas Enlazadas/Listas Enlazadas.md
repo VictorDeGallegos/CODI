@@ -1,1 +1,5 @@
-Linked List es una estructura de datos que consta de un grupo de vértices (nodos) que juntos representan una secuencia. En la forma más simple, cada vértice se compone de un dato y una referencia (enlace) al siguiente vértice de la secuencia
+Linked List es una estructura de datos que consta de un grupo de vértices (nodos) que juntos representan una secuencia. En la forma más simple, cada vértice se compone de un dato y una referencia (enlace) al siguiente vértice de la secuencia.
+
+Ejemplo Lista enlazada:
+
+![listaenlazada1](https://user-images.githubusercontent.com/41756950/113331258-f709b100-92dc-11eb-8f3a-c15f6828ce53.png)
