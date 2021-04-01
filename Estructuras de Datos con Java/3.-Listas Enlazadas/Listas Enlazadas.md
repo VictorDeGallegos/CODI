@@ -1,0 +1,1 @@
+Linked List es una estructura de datos que consta de un grupo de vértices (nodos) que juntos representan una secuencia. En la forma más simple, cada vértice se compone de un dato y una referencia (enlace) al siguiente vértice de la secuencia
