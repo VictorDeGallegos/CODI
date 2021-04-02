@@ -2,7 +2,6 @@ Linked List es una estructura de datos que consta de un grupo de vértices (nodo
 
 Ejemplo Lista enlazada:
 
-![listaenlazada1](https://user-images.githubusercontent.com/41756950/113331258-f709b100-92dc-11eb-8f3a-c15f6828ce53.png)
 
 Para agregar un elemento a una lista enlazada puede hacerse de diferentes formas una de ellas es la siguiente:
 
