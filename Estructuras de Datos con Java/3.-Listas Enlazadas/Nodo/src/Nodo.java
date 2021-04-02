@@ -15,10 +15,10 @@ public Nodo (int d) {
 public int getDato(){
         return dato;
 }
-public int setRef(Nodo referencia){
+public void setRef(Nodo referencia){
         ref = referencia;
 }
-public void getRef(){
+public int getRef(){
         return ref;
 }
 }
