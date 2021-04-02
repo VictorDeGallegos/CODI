@@ -1,3 +1,4 @@
+import java.util.Vector;
 /**
  * Esta clase Nodo solo es para representar la estructura que se utilizará en Lista Enlazada Acciones
  *

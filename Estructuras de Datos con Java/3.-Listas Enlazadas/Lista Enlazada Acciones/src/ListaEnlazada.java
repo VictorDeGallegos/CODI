@@ -31,7 +31,19 @@ public ListaEnlazada agregarInicio(int dato){
  * @param param_name your_param_description
  * @return return_type your_return_description
  **/
-public void agregarFinal() {
+public void agregarFinal(int dato) {
+        Nodo nuevoF;
+        nuevoF = new Nodo(dato);
+        nuevoF.ref = null;
+
+        if(primero == null) {
+                primero = nuevoF;
+                return;
+        }
+        Nodo tmp;
+        for (tmp = primero; tmp.getRef() != null; tmp=tmp.getRef());
+        tmp.setRef(nuevoF);
+
 
 }
 
