@@ -14,3 +14,7 @@ AGREGAR ELEMENTO INICIAL
 AGREGAR ELEMENTO FINAL 
 
 ![Agregar elemento final ](https://user-images.githubusercontent.com/41756950/113440435-a1e7a100-93a9-11eb-8344-33cdf3d45706.GIF)
+
+ELIMINAR ELEMENTO 
+
+![Eliminar](https://user-images.githubusercontent.com/41756950/113452182-c26f2580-93c0-11eb-982b-c1edf3fa8aca.GIF)
