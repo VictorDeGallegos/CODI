@@ -61,9 +61,30 @@ public void buscar() {
  * @param param_name your_param_description
  * @return return_type your_return_description
  **/
-public void eliminar() {
+public void eliminar(int dato) {
+        boolean encontrado;
+        Nodo actual, anterior;
+        actual = primero;
+        anterior = null;
+        encontrado = false;
 
+        while (actual != null && !encontrado) {
+                encontrado = (actual.dato == dato);
+                if(!encontrado) {
+                        anterior = actual;
+                        actual = actual.getRef();
+                }
+        }
+
+        if(actual != null) {
+                if(actual == primero) {
+                } else {
+                        anterior.setRef(actual.ref);
+                }
+
+        }
 }
+
 
 /**
  * @verLista() ver la ListaEnlazada
