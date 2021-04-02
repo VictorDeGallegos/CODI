@@ -5,7 +5,7 @@
  */
 public class Nodo {
 int dato;
-Nodo referencia;
+Nodo ref;
 
 //Definir constructor
 public Nodo (int d) {
@@ -18,7 +18,7 @@ public int getDato(){
 public void setRef(Nodo referencia){
         ref = referencia;
 }
-public int getRef(){
+public Nodo getRef(){
         return ref;
 }
 }
