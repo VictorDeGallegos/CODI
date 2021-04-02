@@ -6,3 +6,5 @@ Ejemplo Lista enlazada:
 
 Para agregar un elemento a una lista enlazada puede hacerse de diferentes formas una de ellas es la siguiente:
 
+
+![Agregar elemento a lista enlazada](https://user-images.githubusercontent.com/41756950/113380709-2b5f8a80-933a-11eb-80be-5154e72e06dc.GIF)
