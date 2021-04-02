@@ -13,7 +13,7 @@ public static void main(String[] args) {
         listaEnlazada.agregarInicio(76);
         listaEnlazada.agregarInicio(89);
         listaEnlazada.agregarFinal(80);//Ejemplo ilustrado en Listas Enlazadas.md
-        listaEnlazada.eliminar(80);
+        listaEnlazada.eliminar(80); //Ejemplo ilustrado en Listas Enlazadas.md
         listaEnlazada.verLista();
 }
 }
