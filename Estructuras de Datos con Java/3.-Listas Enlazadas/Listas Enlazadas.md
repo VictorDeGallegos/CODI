@@ -18,3 +18,7 @@ AGREGAR ELEMENTO FINAL
 ELIMINAR ELEMENTO 
 
 ![Eliminar](https://user-images.githubusercontent.com/41756950/113452182-c26f2580-93c0-11eb-982b-c1edf3fa8aca.GIF)
+
+BUSCAR ELEMENTO
+
+![Buscar](https://user-images.githubusercontent.com/41756950/113614604-5555cd00-9618-11eb-937f-f203bbb70bad.GIF)
