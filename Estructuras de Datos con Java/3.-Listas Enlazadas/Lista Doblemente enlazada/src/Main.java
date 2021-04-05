@@ -4,6 +4,8 @@ public static void main(String[] args) {
         listaEnlazdaDoble.agregar(1);
         listaEnlazdaDoble.agregar(2);
         listaEnlazdaDoble.agregar(3);
+        listaEnlazdaDoble.agregar(4);
+        listaEnlazdaDoble.agregarinicio(5);
         listaEnlazdaDoble.verLista();
 }
 }
