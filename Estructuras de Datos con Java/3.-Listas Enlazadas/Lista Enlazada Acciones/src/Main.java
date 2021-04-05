@@ -14,6 +14,8 @@ public static void main(String[] args) {
         listaEnlazada.agregarInicio(89);
         listaEnlazada.agregarFinal(80);//Ejemplo ilustrado en Listas Enlazadas.md
         listaEnlazada.eliminar(80); //Ejemplo ilustrado en Listas Enlazadas.md
+
         listaEnlazada.verLista();
+        System.out.println("Nodo encontrado " + listaEnlazada.buscar(89));
 }
 }

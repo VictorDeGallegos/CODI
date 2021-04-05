@@ -49,12 +49,19 @@ public void agregarFinal(int dato) {
 
 /**
  * @buscar() busca un elemento en una ListaEnlazada
- * @param param_name your_param_description
- * @return return_type your_return_description
+ * @param int dato
+ * @return null
  **/
-public void buscar() {
+public Nodo buscar(int dato) {
+        Nodo nodob;
+        for (nodob=primero; nodob!=null; nodob= nodob.getRef())
+                if(dato == nodob.dato)
+                        return nodob;
+        return null;
+
 
 }
+
 
 /**
  * @eliminar() elimina un elemento de una ListaEnlazada
