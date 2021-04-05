@@ -19,7 +19,7 @@ public void agregar(int dato){
         tamaño++;
 }
 
-public void agregarinicio(int dato){
+public void agregarInicio(int dato){
         NodoD nuevo = new NodoD(dato);
         if(tamaño==0) {
                 primero=nuevo;
@@ -31,9 +31,30 @@ public void agregarinicio(int dato){
         }
         tamaño++;
 }
-public void eliminar(){
+public boolean eliminarFinal(){
+        if(tamaño > 0) {
+                if(tamaño() ==1) {
+                        primero = null;
+                        ultimo = null;
+                } else {
+                        ultimo.atras.adelante = null;
+                        ultimo = ultimo.adelante = null;
+                }
+                tamaño--;
+        }
+        return false;
 }
-public void eliminarInicio(){
+public boolean eliminarInicio(){
+        if(tamaño>0) {
+                if(tamaño()==1) {
+                        primero = null;
+                        ultimo = null;
+                } else {
+                        primero.adelante.atras=null;
+                        primero = primero.adelante;
+                }
+        }
+        return false;
 }
 public void verLista(){
         NodoD nodov;
@@ -44,4 +65,13 @@ public void verLista(){
         }
 }
 
+
+//  Metodos auxiliares para saber la dimension de la lista
+
+public int tamaño(){
+        return tamaño;
+}
+public boolean vacio(){
+        return tamaño() == 0;
+}
 }
