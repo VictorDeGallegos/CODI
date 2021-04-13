@@ -7,8 +7,4 @@ A las pilas se les puede conocer como LIFO (Last in first out)
 
 Ejemplo:
 
-PILA        CONTENIDO
-A       |   A
-B       |   B A
-C       |   C B A
-POP     |   B A
+![pila](https://user-images.githubusercontent.com/41756950/114487696-a98f1d00-9bd5-11eb-9c01-ce95a5379525.png)
