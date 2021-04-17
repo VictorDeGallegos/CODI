@@ -42,7 +42,16 @@ public int getAge() {
 public void setAge(int age) {
         this.age = age;
 
+}
 
 
+
+/**
+ * Create string representation of Persona for printing
+ * @return
+ */
+@Override
+public String toString() {
+        return "Persona [ name=" + name + ", age=" + age +" ]";
 }
 }
