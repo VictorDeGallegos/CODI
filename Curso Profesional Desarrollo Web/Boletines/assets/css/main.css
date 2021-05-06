@@ -15,11 +15,15 @@ a {
   text-decoration: none;
   color: #1bb099;
 }
+img {
+  max-width: 100%;
+}
 a:hover {
   text-decoration: none;
   opacity: 0.5;
 }
-a:visited {
+a:focus {
+  background: red;
 }
 .title {
   text-transform: uppercase;
@@ -46,7 +50,7 @@ a:visited {
   /* padding: arriba derecha abajo izquierda; */
   /* padding: arriba/abajo derecha/izquierda */
   /* padding: todos-lados */
-  font-size: 2.5em;
+  font-size: 2em;
   text-transform: uppercase;
   display: flex;
   align-items: center;
@@ -83,7 +87,7 @@ a:visited {
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16), 0px 3px 6px rgba(0, 0, 0, 0.23);
   border-radius: 4px;
   position: relative;
-  padding: 1.8em;
+  padding: 1em;
   overflow: scroll;
 }
 
@@ -135,6 +139,14 @@ a:visited {
   background-color: #b9318949;
 }
 
+.address {
+  font-weight: bold;
+  color: #448aff;
+  font-size: 1.2em;
+  margin-top: 1em;
+  display: inline-block;
+}
+
 .position {
   background-color: #451329;
   color: white;
@@ -158,6 +170,35 @@ a:visited {
   display: inline-block;
 }
 
+.main-image {
+  float: left;
+  margin-right: 1em;
+  height: 250px;
+}
+@media (min-width: 900px) {
+  th {
+    display: table-cell;
+  }
+
+  td {
+    width: auto;
+    display: table-cell;
+  }
+
+  td:nth-last-of-type(1) {
+    font-size: 1em;
+  }
+
+  .content {
+    padding: 1.8em;
+  }
+}
+
+@media (min-height: 550px) {
+  .content {
+    height: 500px;
+  }
+}
 .main-image {
   float: left;
   margin-right: 1em;
