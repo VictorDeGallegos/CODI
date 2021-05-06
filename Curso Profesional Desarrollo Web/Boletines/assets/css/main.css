@@ -23,7 +23,7 @@ a:hover {
   opacity: 0.5;
 }
 a:focus {
-  background: red;
+  background: #e53916;
 }
 .title {
   text-transform: uppercase;
