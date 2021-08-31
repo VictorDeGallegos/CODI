@@ -6,6 +6,8 @@ import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
+import javax.print.attribute.standard.MediaSize.Other;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -70,9 +72,24 @@ public class Main {
         // Conocer si un alumno posee por lo menos una calificacion no aprobatoria
         // La calificacion minima aprobatoria es 6
 
-        List<Integer> calificaciones = List.of(10, 10, 9, 6, 6, 7, 8, 9, 10);
+        // List<Integer> calificaciones = List.of(10, 10, 9, 6, 6, 7, 8, 9, 10);
 
-        boolean result = calificaciones.stream().anyMatch(calificaion -> calificaion < 6);
-        System.out.println(result);
+        // boolean result = calificaciones.stream().anyMatch(calificaion -> calificaion
+        // < 6);
+        // System.out.println(result);
+
+        // Obtener la cantidad de usuarios con edad igual 25 FindAny Findfirst
+        List<User> users = new ArrayList<>();
+
+        users.add(new User("Rafael", 25));
+        users.add(new User("Daniel", 25));
+        users.add(new User("Tania", 15));
+        users.add(new User("Luisa", 24));
+        users.add(new User("Raul", 21));
+
+        User userDefault = new User("Sin nombre", 30);
+        User user = users.stream().filter(u -> u.getAge() == 16).findFirst().orElse(userDefault);
+
+        System.out.println(user.getUsername());
     }
 }
