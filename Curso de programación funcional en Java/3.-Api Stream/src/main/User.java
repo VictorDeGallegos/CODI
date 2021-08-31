@@ -18,4 +18,8 @@ public class User {
         return age;
     }
 
+    public String toString() {
+        return this.getUsername();
+    }
+
 }
