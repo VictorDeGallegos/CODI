@@ -18,6 +18,14 @@ public class Main {
         // System.out.println(numeros);
         // System.out.println(result);
 
+        // Obtener el cuadrado de todos los numeros en la lista. usando Foreach
+
+        List<Integer> numeros = List.of(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+        numeros.stream().forEach(num -> {
+            int resultado = num * num;
+            System.out.println(resultado);
+        });
+
         // Filtrar!
         // Obtener la cantidad de usuarios con edad mayor a 18 y que el username
         // comience con R
@@ -50,12 +58,13 @@ public class Main {
         // System.out.println(newUsers);
 
         // FlatMap
-        List<String> names1 = Arrays.asList("Hugo 1", "Hugo 2");
-        List<String> names2 = Arrays.asList("Hugo 1", "Hugo 2");
-        List<String> names3 = Arrays.asList("Hugo 1", "Hugo 2");
+        // List<String> names1 = Arrays.asList("Hugo 1", "Hugo 2");
+        // List<String> names2 = Arrays.asList("Hugo 1", "Hugo 2");
+        // List<String> names3 = Arrays.asList("Hugo 1", "Hugo 2");
 
-        List<String> result = Stream.of(names1, names2, names3).flatMap(elemento -> elemento.stream())
-                .collect(Collectors.toList());
-        System.out.println(result);
+        // List<String> result = Stream.of(names1, names2, names3).flatMap(elemento ->
+        // elemento.stream())
+        // .collect(Collectors.toList());
+        // System.out.println(result);
     }
 }
