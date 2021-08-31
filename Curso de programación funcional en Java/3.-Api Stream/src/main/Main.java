@@ -79,17 +79,39 @@ public class Main {
         // System.out.println(result);
 
         // Obtener la cantidad de usuarios con edad igual 25 FindAny Findfirst
-        List<User> users = new ArrayList<>();
+        // List<User> users = new ArrayList<>();
 
-        users.add(new User("Rafael", 25));
-        users.add(new User("Daniel", 25));
-        users.add(new User("Tania", 15));
-        users.add(new User("Luisa", 24));
-        users.add(new User("Raul", 21));
+        // users.add(new User("Rafael", 25));
+        // users.add(new User("Daniel", 25));
+        // users.add(new User("Tania", 15));
+        // users.add(new User("Luisa", 24));
+        // users.add(new User("Raul", 21));
 
-        User userDefault = new User("Sin nombre", 30);
-        User user = users.stream().filter(u -> u.getAge() == 16).findFirst().orElse(userDefault);
+        // User userDefault = new User("Sin nombre", 30);
+        // User user = users.stream().filter(u -> u.getAge() ==
+        // 16).findFirst().orElse(userDefault);
 
-        System.out.println(user.getUsername());
+        // System.out.println(user.getUsername());
+
+        List<Integer> numeros = List.of(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+
+        Long cantidad = numeros.stream().filter(n -> n > 6).count();
+        System.out.println(cantidad);
+
+        // sum -> intStream -> mapToInt
+        int suma = numeros.stream().mapToInt(n -> n).sum();
+        System.out.println(suma);
+
+        // average -> intStream
+        double promedio = numeros.stream().mapToInt(n -> n).average().orElse(0);
+        System.out.println(promedio);
+
+        // min -> intStream
+        int minimo = numeros.stream().mapToInt(n -> n).min().getAsInt();
+        System.out.println(minimo);
+
+        // max -> intStream
+        int maximo = numeros.stream().mapToInt(n -> n).max().getAsInt();
+        System.out.println(maximo);
     }
 }
