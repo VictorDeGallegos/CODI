@@ -1,0 +1,7 @@
+{
+    "java.project.sourcePaths": [
+        "3.-Api Stream/src",
+        "3.-Api Stream/Reduce/src/main",
+        "3.-Api Stream/Distict/src/main"
+    ]
+}
