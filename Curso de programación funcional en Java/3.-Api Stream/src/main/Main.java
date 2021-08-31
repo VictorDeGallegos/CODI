@@ -2,6 +2,7 @@ package main;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Stream;
 
 public class Main {
     public static void main(String[] args) {
@@ -17,8 +18,19 @@ public class Main {
         users.add(new User("Luisa", 24));
         users.add(new User("Raul", 21));
 
-        long cantidad = users.stream().filter(user -> user.getAge() > 18)
-                .filter(user -> user.getUsername().startsWith("R")).count();
-        System.out.println(cantidad);
+        // long cantidad = users.stream().filter(user -> user.getAge() > 18)
+        // .filter(user -> user.getUsername().startsWith("R")).count();
+        // System.out.println(cantidad);
+
+        // Proceso
+        // Iteracion interna
+
+        // Retornar nuevo stream
+        // Retornar un valor en concreto
+        // Retornar un nuevo stream
+        Stream<User> stream = users.stream();
+
+        // Filter -> Abstraccion -Nuevo stream
+        System.out.println(stream.filter(user -> user.getAge() > 18).count());
     }
 }
