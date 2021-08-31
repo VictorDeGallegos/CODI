@@ -20,11 +20,11 @@ public class Main {
 
         // Obtener el cuadrado de todos los numeros en la lista. usando Foreach
 
-        List<Integer> numeros = List.of(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
-        numeros.stream().forEach(num -> {
-            int resultado = num * num;
-            System.out.println(resultado);
-        });
+        // List<Integer> numeros = List.of(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+        // numeros.stream().forEach(num -> {
+        // int resultado = num * num;
+        // System.out.println(resultado);
+        // });
 
         // Filtrar!
         // Obtener la cantidad de usuarios con edad mayor a 18 y que el username
@@ -66,5 +66,13 @@ public class Main {
         // elemento.stream())
         // .collect(Collectors.toList());
         // System.out.println(result);
+
+        // Conocer si un alumno posee por lo menos una calificacion no aprobatoria
+        // La calificacion minima aprobatoria es 6
+
+        List<Integer> calificaciones = List.of(10, 10, 9, 6, 6, 7, 8, 9, 10);
+
+        boolean result = calificaciones.stream().anyMatch(calificaion -> calificaion < 6);
+        System.out.println(result);
     }
 }
